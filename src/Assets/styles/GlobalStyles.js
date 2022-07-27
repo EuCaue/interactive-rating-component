@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import * as colors from './colors';
 
 export default createGlobalStyle`
   * {
@@ -11,6 +12,8 @@ export default createGlobalStyle`
 }
 
 html, body , #root {
+  background-color: ${colors.veryDarkBlue};
+
   height: 100%;
 }
 

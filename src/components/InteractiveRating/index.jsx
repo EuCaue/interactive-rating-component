@@ -2,16 +2,23 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 
-import { Form } from './styled';
+import { Form, Ul } from './styled';
 import { Container } from '../../Assets/styles/GlobalStyles';
 import star from '../../Assets/images/icon-star.svg';
 
 export default function InteractiveRating() {
+  // const handleSelect = (e) => {
+  //   console.log('click');
+  //   e.target.style.background = 'black';
+  // };
+
   return (
     <Container>
       <Form>
         <article>
-          <img src={star} alt="Star Logo" />
+          <div>
+            <img src={star} alt="Star Logo" />
+          </div>
 
           <h1>How did we do?</h1>
           <h2>
@@ -19,13 +26,13 @@ export default function InteractiveRating() {
             feedback is appreciated to help us improve our offering!
           </h2>
 
-          <ul>
+          <Ul>
             <li>1</li>
             <li>2</li>
             <li>3</li>
             <li>4</li>
             <li>5</li>
-          </ul>
+          </Ul>
           <label htmlFor="submit">
             <input type="submit" name="submit" value="SUBMIT" />
           </label>
