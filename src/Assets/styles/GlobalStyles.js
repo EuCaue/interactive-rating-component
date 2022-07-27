@@ -39,6 +39,6 @@ export const Container = styled.section`
   /* margin: 100px 50px 10px 50px; */
   footer {
     position: absolute;
-    top: 97%;
+    top: 120%;
   }
 `;

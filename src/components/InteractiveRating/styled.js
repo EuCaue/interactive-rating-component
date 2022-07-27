@@ -8,7 +8,7 @@ export const Form = styled.form`
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: brightness(88%);
+  filter: brightness(90%);
   border-radius: 8%;
   width: 30%;
   -webkit-box-shadow: 0px 6px 36px -5px rgba(0,0,0,0.77);
@@ -16,38 +16,12 @@ export const Form = styled.form`
   box-shadow: 0px 6px 36px -5px rgba(0,0,0,0.77);
   padding: 30px;
   height: fit-content;
+  margin: 0 auto;
   margin-top: 100px;
-  margin-left: 30%;
-  /* border-radius: 5px; */
   color: ${colors.white};
 
   article {
     width: 100%;
-
-  }
-
-    div {
-      height: 40px;
-      width: 40px;
-      filter: brightness(120%);
-      background-color: ${colors.darkBlue};
-      border: none;
-      border-radius: 40px;
-      display: flex;
-    justify-content: center;
-    align-items: center;
-
-    }
-
-
-
-   img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 40px;
-    width: 15px;
   }
 
   h1 {
@@ -63,23 +37,6 @@ export const Form = styled.form`
     color: ${colors.lightGrey};
   }
 
-  /* ul  */
-
-  input {
-    background-color: ${colors.orange};
-    color: ${colors.white};
-    /* padding:  2px; */
-    width: 100%;
-    height: 35px;
-    font-size: 14px;
-    border-radius: 15px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: flex-end; */
-    text-align: center;
-    /* margin: 0 50px; */
-
-  }
 
 @media screen and (max-width: 375px) {
   display: flex;
@@ -92,8 +49,8 @@ export const Form = styled.form`
 export const Ul = styled.ul`
 
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    flex-direction: row;
     margin-top: 10px;
     margin-bottom: 15px;
     li {
@@ -109,15 +66,53 @@ export const Ul = styled.ul`
       height: 50px;
       width: 50px;
       text-align: center;
-      transition: all 900ms;
+      transition: all 200ms ease-out;
+      font-weight: bold;
 
+      :focus {
+      background-color: ${colors.mediumGrey};
+      color: ${colors.white};
+    }
       :hover {
         background-color: ${colors.orange};
       }
-      ::before {
-        background-color: ${props.colors.white};
-      }
     }
 
+`;
+
+export const Input = styled.input`
+    background-color: ${colors.orange};
+    color: ${colors.white};
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 15px;
+    text-align: center;
+
+    :hover {
+      background-color: ${colors.white};
+      color: ${colors.orange};
+    }
+`;
+
+export const StarDiv = styled.div`
+      height: 40px;
+      width: 40px;
+      filter: brightness(120%);
+      background-color: ${colors.darkBlue};
+      border: none;
+      border-radius: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: 40px;
+      width: 15px;
+   }
 
 `;

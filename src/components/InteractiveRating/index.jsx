@@ -1,24 +1,34 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+// Global Imports 💬
+import React, { useState } from 'react';
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
-import { Form, Ul } from './styled';
+// Local Imports 💬
 import { Container } from '../../Assets/styles/GlobalStyles';
+import { Form, Ul, Input, StarDiv } from './styled';
 import star from '../../Assets/images/icon-star.svg';
 
 export default function InteractiveRating() {
-  // const handleSelect = (e) => {
-  //   console.log('click');
-  //   e.target.style.background = 'black';
-  // };
+  // Hooks 💬
+  const [stars, setStars] = useState('');
+  const navigate = useNavigate();
+
+  // Function to handle the submit event, and go to thanks page 💬
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!stars) toast.info('Select a value');
+    navigate('/thanks');
+  };
 
   return (
     <Container>
-      <Form>
+      <Form onSubmit={(e) => handleSubmit(e)}>
         <article>
-          <div>
+          {/* Div with styled-components, for the starSv 💬 */}
+          <StarDiv>
             <img src={star} alt="Star Logo" />
-          </div>
+          </StarDiv>
 
           <h1>How did we do?</h1>
           <h2>
@@ -26,21 +36,24 @@ export default function InteractiveRating() {
             feedback is appreciated to help us improve our offering!
           </h2>
 
-          <Ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
+          {/* Ranking 💬 */}
+          <Ul onClick={(e) => setStars(e.target.textContent)}>
+            <li tabIndex={-1}>1</li>
+            <li tabIndex={-1}>2</li>
+            <li tabIndex={-1}>3</li>
+            <li tabIndex={-1}>4</li>
+            <li tabIndex={-1}>5</li>
           </Ul>
+          {/* button for submit 💬 */}
           <label htmlFor="submit">
-            <input type="submit" name="submit" value="SUBMIT" />
+            <Input type="submit" name="submit" value="SUBMIT" />
           </label>
           {/* Thank you! We appreciate you taking the time to give a rating. If you
           ever need more support, don’t hesitate to get in touch! */}
         </article>
       </Form>
 
+      {/* Footer 💬 */}
       <footer>
         Challenge by{' '}
         <a
