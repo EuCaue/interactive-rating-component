@@ -27,18 +27,38 @@ input {
   border-radius: 4px;
   font-weight: 700;
   transition: all 300ms;
-  &:hover {
-    filter: brightness(80%);
-  }
 }
 
 `;
 
 export const Container = styled.section`
-  /* max-width: 1440px; */
   /* margin: 100px 50px 10px 50px; */
   footer {
     position: absolute;
     top: 120%;
+    color: ${colors.lightGrey};
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+        :link {
+          color: ${colors.orange};
+        }
+
+        :visited {
+          color: ${colors.orange};
+        }
+
+        :active {
+          color: ${colors.white};
+        }
+    }
   }
+
+  @media screen and (max-width: 375px) {
+      footer {
+        width: 60%;
+      }
+    }
+
 `;

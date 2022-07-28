@@ -20,7 +20,7 @@ export const Form = styled.form`
   margin-top: 100px;
   color: ${colors.white};
 
-  article {
+  main {
     width: 100%;
   }
 
@@ -33,7 +33,7 @@ export const Form = styled.form`
   }
 
   h2 {
-    font-weight: 400;
+    font-weight: bold;
     color: ${colors.lightGrey};
   }
 
@@ -42,7 +42,14 @@ export const Form = styled.form`
   display: flex;
   margin: 0 auto;
   margin-top: 20%;
-  width: 90%;
+  width: 95%;
+
+  Ul {
+    li {
+      border-radius: 60%;
+    }
+  }
+
 }
 `;
 
@@ -57,14 +64,15 @@ export const Ul = styled.ul`
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 10px;
+      /* margin: 10px; */
+      margin-top: 10px;
       color: ${colors.lightGrey};
       border-radius: 50%;
       background-color: ${colors.darkBlue};
       filter: brightness(130%);
       cursor: pointer;
       height: 50px;
-      width: 50px;
+      width: 14%;
       text-align: center;
       transition: all 200ms ease-out;
       font-weight: bold;

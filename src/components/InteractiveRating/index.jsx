@@ -17,27 +17,36 @@ export default function InteractiveRating() {
   // Function to handle the submit event, and go to thanks page 💬
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!stars) toast.info('Select a value');
+    // Checking if no stars were given 💬
+    if (!stars) return toast.info('Select a value');
+
+    // Checking if the value does not correspond to a star 💬
+    if (stars === '12345') {
+      return toast.info('Error with the value, select again.');
+    }
+    // Navigate to the thanks page 💬
     navigate('/thanks');
+    return true;
   };
 
   return (
     <Container>
       <Form onSubmit={(e) => handleSubmit(e)}>
-        <article>
+        <main>
           {/* Div with styled-components, for the starSv 💬 */}
           <StarDiv>
             <img src={star} alt="Star Logo" />
           </StarDiv>
 
           <h1>How did we do?</h1>
+
           <h2>
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </h2>
 
           {/* Ranking 💬 */}
-          <Ul onClick={(e) => setStars(e.target.textContent)}>
+          <Ul onClick={(e) => setStars(e.target.textContent)} role="listitem">
             <li tabIndex={-1}>1</li>
             <li tabIndex={-1}>2</li>
             <li tabIndex={-1}>3</li>
@@ -48,9 +57,10 @@ export default function InteractiveRating() {
           <label htmlFor="submit">
             <Input type="submit" name="submit" value="SUBMIT" />
           </label>
+
           {/* Thank you! We appreciate you taking the time to give a rating. If you
           ever need more support, don’t hesitate to get in touch! */}
-        </article>
+        </main>
       </Form>
 
       {/* Footer 💬 */}
@@ -66,6 +76,10 @@ export default function InteractiveRating() {
         . Coded by{' '}
         <a href="https://github.com/EuCaue/" target="_blank" rel="noreferrer">
           Cauê Souza
+        </a>
+        . With{' '}
+        <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+          ReactJS
         </a>
         .
       </footer>
