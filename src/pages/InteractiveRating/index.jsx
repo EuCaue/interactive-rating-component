@@ -22,7 +22,7 @@ export default function InteractiveRating() {
 
     // Checking if the value does not correspond to a star 💬
     if (stars === '12345') {
-      return toast.info('Error with the value, select again.');
+      return toast.info('Error with the value, please select again.');
     }
     localStorage.setItem('stars', JSON.stringify(stars));
 
