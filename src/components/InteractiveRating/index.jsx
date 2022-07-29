@@ -24,6 +24,8 @@ export default function InteractiveRating() {
     if (stars === '12345') {
       return toast.info('Error with the value, select again.');
     }
+    localStorage.setItem('stars', JSON.stringify(stars));
+
     // Navigate to the thanks page 💬
     navigate('/thanks');
     return true;
@@ -57,9 +59,6 @@ export default function InteractiveRating() {
           <label htmlFor="submit">
             <Input type="submit" name="submit" value="SUBMIT" />
           </label>
-
-          {/* Thank you! We appreciate you taking the time to give a rating. If you
-          ever need more support, don’t hesitate to get in touch! */}
         </main>
       </Form>
 
