@@ -14,7 +14,9 @@ export default function ThankYou() {
       <Main>
         <img src={thankYouSvg} alt="Thank you" />
 
-        <p>You Selected {stars} out of 5</p>
+        <span className="background-state">
+          <p>You Selected {stars} out of 5</p>
+        </span>
 
         <h1>Thank you!</h1>
         <h2>
