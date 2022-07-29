@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import * as colors from '../../Assets/styles/colors';
 
+// main tag styled 💬
 export const Main = styled.main`
  background-color: ${colors.darkBlue};
   display: flex;
@@ -19,6 +20,7 @@ export const Main = styled.main`
   color: ${colors.white};
   flex-direction: column;
 
+  /* svg 💬 */
   img {
     display: flex;
     align-items: center;
@@ -26,6 +28,7 @@ export const Main = styled.main`
     padding: 40px;
     padding-top: 10px;
   }
+  /* background 💬 */
   .background-state {
     background-color: ${colors.darkBlue};
     filter: contrast(92%);
@@ -33,6 +36,7 @@ export const Main = styled.main`
     width: 52%;
   }
 
+  /* for the stars 💬 */
   p {
     color: ${colors.orange};
     text-align: center;
@@ -44,6 +48,7 @@ export const Main = styled.main`
     filter: brightness(120%);
   }
 
+  /* thank yo 💬 */
   h1 {
     padding: 10px;
     padding-top: 25px;
@@ -52,6 +57,7 @@ export const Main = styled.main`
     color: ${colors.white};
   }
 
+  /* little text 💬 */
   h2 {
     color: ${colors.lightGrey};
     width: 98%;
@@ -60,6 +66,7 @@ export const Main = styled.main`
     filter: brightness(110%);
   }
 
+/* responsive 💬 */
   @media screen and (max-width: 375px) {
   display: flex;
   margin: 0 auto;

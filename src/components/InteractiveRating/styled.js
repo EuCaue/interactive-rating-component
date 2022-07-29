@@ -3,6 +3,7 @@ import * as colors from '../../Assets/styles/colors';
 // Mobile: 375px
 // Desktop: 1440px
 
+// Form 💬
 export const Form = styled.form`
   background-color: ${colors.darkBlue};
   display: flex;
@@ -53,6 +54,7 @@ export const Form = styled.form`
 }
 `;
 
+// UL 💬
 export const Ul = styled.ul`
 
     display: flex;
@@ -88,6 +90,7 @@ export const Ul = styled.ul`
 
 `;
 
+// Input 💬
 export const Input = styled.input`
     background-color: ${colors.orange};
     color: ${colors.white};
@@ -103,6 +106,7 @@ export const Input = styled.input`
     }
 `;
 
+// Div for the starimg 💬
 export const StarDiv = styled.div`
       height: 40px;
       width: 40px;

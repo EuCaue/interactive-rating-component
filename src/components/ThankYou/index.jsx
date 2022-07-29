@@ -7,15 +7,18 @@ import { Main } from './styled';
 import thankYouSvg from '../../Assets/images/illustration-thank-you.svg';
 
 export default function ThankYou() {
-  const star = localStorage.getItem('stars');
-  const stars = JSON.parse(star);
+  // Recovering the state of rating page 💬
+  const stars = localStorage.getItem('stars');
+  const star = JSON.parse(stars);
   return (
     <Container>
       <Main>
+        {/* IMG */}
         <img src={thankYouSvg} alt="Thank you" />
 
+        {/*  */}
         <span className="background-state">
-          <p>You Selected {stars} out of 5</p>
+          <p>You Selected {star} out of 5</p>
         </span>
 
         <h1>Thank you!</h1>

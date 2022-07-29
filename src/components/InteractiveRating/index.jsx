@@ -64,7 +64,7 @@ export default function InteractiveRating() {
 
       {/* Footer 💬 */}
       <footer>
-        Challenge by{' '}
+        Challenge by
         <a
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
@@ -72,11 +72,11 @@ export default function InteractiveRating() {
         >
           Frontend Mentor
         </a>
-        . Coded by{' '}
+        . Coded by
         <a href="https://github.com/EuCaue/" target="_blank" rel="noreferrer">
           Cauê Souza
         </a>
-        . With{' '}
+        . With
         <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
           ReactJS
         </a>
