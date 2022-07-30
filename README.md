@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](../screenshot/screenshot1.png)
+![](screenshot/screenshot1.png)
 
 More screenshot in the folder
 
@@ -91,7 +91,7 @@ More screenshot in the folder
 ### Local Test
 <p>Clone the repo</p>
 <code>
-`git clone https://github.com/EuCaue/interactive-rating-component.git`
+git clone https://github.com/EuCaue/interactive-rating-component.git
 </code>
 <p>
  Open the terminal inside of it
