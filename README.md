@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](../screenshot/screenshot1.png)
+![](screenshot/screenshot1.png)
 
 More screenshot in the folder
 
