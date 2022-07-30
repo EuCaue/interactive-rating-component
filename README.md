@@ -34,7 +34,7 @@ More screenshot in the folder
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/EuCaue/interactive-rating-component)
-- Live Site URL: [Github Page](https://eucaue.github.io/interactive-rating-component/)
+- Live Site URL: [Site(versel)](https://interactive-rating-component-main-qyiebtozt-eucaue.vercel.app/)
 
 ## My process
 
