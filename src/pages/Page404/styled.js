@@ -38,4 +38,6 @@ export const Main = styled.main`
           color: ${colors.white};
         }
     }
+
+
   `;

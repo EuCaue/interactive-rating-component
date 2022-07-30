@@ -52,6 +52,36 @@ export const Form = styled.form`
   }
 
 }
+
+@media screen and (max-width: 768px) {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20%;
+  width: 45%;
+
+  Ul {
+    li {
+      border-radius: 60%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20%;
+  width: 70%;
+
+  Ul {
+    li {
+      border-radius: 60%;
+    }
+  }
+
+}
+
+
 `;
 
 // UL 💬

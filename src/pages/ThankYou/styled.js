@@ -33,7 +33,7 @@ export const Main = styled.main`
     background-color: ${colors.darkBlue};
     filter: contrast(92%);
     border-radius: 15px;
-    width: 52%;
+    width: 92%;
   }
 
   /* for the stars 💬 */
@@ -71,12 +71,21 @@ export const Main = styled.main`
   display: flex;
   margin: 0 auto;
   margin-top: 20%;
-  margin-right: 10px;
-  margin-left: 10px;
-  width: 95%;
-
+  /* margin-right: 10px; */
+  /* margin-left: 10px; */
+  width: 92%;
   .background-state {
-    width: 62%;
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20%;
+  width: 75%;
+  .background-state {
+    width: 92%;
   }
 }
 `;
