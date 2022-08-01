@@ -189,7 +189,7 @@ export const Input = styled.input`
     }
 `;
 
-// Div for the starimg 💬
+// Div for the Starimg 💬
 export const StarDiv = styled.div`
       height: 40px;
       width: 40px;
