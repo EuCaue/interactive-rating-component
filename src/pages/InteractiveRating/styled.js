@@ -5,82 +5,126 @@ import * as colors from '../../Assets/styles/colors';
 
 // Form 💬
 export const Form = styled.form`
-  background-color: ${colors.darkBlue};
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: brightness(90%);
-  border-radius: 8%;
+  border-radius: 5%;
   width: 30%;
   -webkit-box-shadow: 0px 6px 36px -5px rgba(0,0,0,0.77);
   -moz-box-shadow: 0px 6px 36px -5px rgba(0,0,0,0.77);
   box-shadow: 0px 6px 36px -5px rgba(0,0,0,0.77);
   padding: 30px;
-  height: fit-content;
+  height: 60%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 10%;
   color: ${colors.white};
+  background: linear-gradient(180deg, ${colors.darkBlue}, ${colors.veryDarkBlue});
 
-  main {
+   article{
     width: 100%;
   }
 
   h1 {
     padding-top: 25px;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 10px;
     color: ${colors.white};
     font-size: 28px;
   }
 
   h2 {
-    font-weight: bold;
     color: ${colors.lightGrey};
   }
 
 
-@media screen and (max-width: 375px) {
+  @media only screen and (max-width: 968px) {
   display: flex;
   margin: 0 auto;
   margin-top: 20%;
-  width: 95%;
+  width: 40%;
+  height: fit-content;
 
-  Ul {
+ Ul {
     li {
       border-radius: 60%;
+      width: 15%;
+      height: 45px;
     }
   }
 
 }
 
-@media screen and (max-width: 768px) {
+ @media only screen and (max-width: 768px) {
   display: flex;
   margin: 0 auto;
   margin-top: 20%;
-  width: 45%;
+  width: 43%;
+  height: fit-content;
 
-  Ul {
+ Ul {
     li {
       border-radius: 60%;
+      width: 15%;
+      height: 45px;
     }
   }
 
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   display: flex;
   margin: 0 auto;
   margin-top: 20%;
-  width: 70%;
+  width: 55%;
+  height: fit-content;
 
-  Ul {
+ Ul {
     li {
       border-radius: 60%;
+      width: 15%;
+      height: 45px;
     }
   }
 
 }
 
+
+@media only screen and (max-width: 475px) {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20%;
+  width: 80%;
+  height: max-content;
+  article {
+    width: 100%;
+  }
+ Ul {
+    li {
+      border-radius: 60%;
+      width: 15%;
+      height: 45px;
+    }
+  }
+
+}
+@media only screen and (max-width: 375px) {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20%;
+  width: 90%;
+  height: max-content;
+  article {
+    width: 100%;
+  }
+ Ul {
+    li {
+      border-radius: 60%;
+      width: 15%;
+      height: 45px;
+    }
+  }
+
+}
 
 `;
 
@@ -96,12 +140,10 @@ export const Ul = styled.ul`
       display: flex;
       justify-content: center;
       align-items: center;
-      /* margin: 10px; */
       margin-top: 10px;
       color: ${colors.lightGrey};
       border-radius: 50%;
       background-color: ${colors.darkBlue};
-      filter: brightness(130%);
       cursor: pointer;
       height: 50px;
       width: 14%;
@@ -115,6 +157,7 @@ export const Ul = styled.ul`
     }
       :hover {
         background-color: ${colors.orange};
+        color: ${colors.white};
       }
     }
 
@@ -125,7 +168,7 @@ export const Input = styled.input`
     background-color: ${colors.orange};
     color: ${colors.white};
     width: 100%;
-    height: 35px;
+    height: 40px;
     font-size: 14px;
     border-radius: 15px;
     text-align: center;

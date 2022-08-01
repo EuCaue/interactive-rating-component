@@ -43,7 +43,6 @@ More screenshot in the folder
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [React-Router-Dom](https://reactrouter.com/) - For the routes
 - [Styled Components](https://styled-components.com/) - For styles

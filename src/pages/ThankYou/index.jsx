@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Local Imports 💬
-import { Container } from '../../Assets/styles/GlobalStyles';
+import { Footer } from '../../Assets/styles/GlobalStyles';
 import { Main } from './styled';
 import thankYouSvg from '../../Assets/images/illustration-thank-you.svg';
 
@@ -11,7 +11,7 @@ export default function ThankYou() {
   const stars = localStorage.getItem('stars');
   const star = JSON.parse(stars);
   return (
-    <Container>
+    <>
       <Main>
         {/* IMG */}
         <img src={thankYouSvg} alt="Thank you" />
@@ -27,6 +27,25 @@ export default function ThankYou() {
           more support, don’t hesitate to get in touch!
         </h2>
       </Main>
-    </Container>
+
+      <Footer>
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Frontend Mentor
+        </a>
+        Coded by
+        <a href="https://github.com/EuCaue/" target="_blank" rel="noreferrer">
+          Cauê Souza
+        </a>
+        With
+        <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+          ReactJS
+        </a>
+      </Footer>
+    </>
   );
 }

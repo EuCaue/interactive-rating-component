@@ -31,12 +31,14 @@ input {
 
 `;
 
-export const Container = styled.section`
-  /* margin: 100px 50px 10px 50px; */
-  footer {
-    position: absolute;
-    top: 120%;
+export const Footer = styled.footer`
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-indent: 3px;
+    align-items: center;
     color: ${colors.lightGrey};
+    padding-top: 11px;
     a {
       text-decoration: none;
       font-weight: 600;
@@ -53,12 +55,10 @@ export const Container = styled.section`
           color: ${colors.white};
         }
     }
+
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    margin-top: 10px;
   }
-
-  @media screen and (max-width: 375px) {
-      footer {
-        width: 60%;
-      }
-    }
-
 `;

@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
 // Local Imports 💬
-import { Container } from '../../Assets/styles/GlobalStyles';
+import { Footer } from '../../Assets/styles/GlobalStyles';
 import { Form, Ul, Input, StarDiv } from './styled';
 import star from '../../Assets/images/icon-star.svg';
 
@@ -32,9 +32,9 @@ export default function InteractiveRating() {
   };
 
   return (
-    <Container>
+    <>
       <Form onSubmit={(e) => handleSubmit(e)}>
-        <main>
+        <article>
           {/* Div with styled-components, for the starSv 💬 */}
           <StarDiv>
             <img src={star} alt="Star Logo" />
@@ -48,7 +48,7 @@ export default function InteractiveRating() {
           </h2>
 
           {/* Ranking 💬 */}
-          <Ul onClick={(e) => setStars(e.target.textContent)} role="listitem">
+          <Ul onClick={(e) => setStars(e.target.textContent)}>
             <li tabIndex={-1}>1</li>
             <li tabIndex={-1}>2</li>
             <li tabIndex={-1}>3</li>
@@ -57,13 +57,12 @@ export default function InteractiveRating() {
           </Ul>
           {/* button for submit 💬 */}
           <label htmlFor="submit">
-            <Input type="submit" name="submit" value="SUBMIT" />
+            <Input type="submit" id="submit" name="submit" value="SUBMIT" />
           </label>
-        </main>
+        </article>
       </Form>
-
       {/* Footer 💬 */}
-      <footer>
+      <Footer>
         Challenge by
         <a
           href="https://www.frontendmentor.io?ref=challenge"
@@ -72,16 +71,15 @@ export default function InteractiveRating() {
         >
           Frontend Mentor
         </a>
-        . Coded by
+        Coded by
         <a href="https://github.com/EuCaue/" target="_blank" rel="noreferrer">
           Cauê Souza
         </a>
-        . With
+        With
         <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
           ReactJS
         </a>
-        .
-      </footer>
-    </Container>
+      </Footer>
+    </>
   );
 }
