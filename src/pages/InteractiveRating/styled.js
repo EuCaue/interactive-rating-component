@@ -15,8 +15,8 @@ export const Form = styled.form`
   box-shadow: 0px 6px 36px -5px rgba(0,0,0,0.77);
   padding: 30px;
   height: 60%;
-  margin: 0 auto;
-  margin-top: 10%;
+  margin: auto;
+  margin-top: 10vh;
   color: ${colors.white};
   background: linear-gradient(180deg, ${colors.darkBlue}, ${colors.veryDarkBlue});
 
@@ -38,12 +38,13 @@ export const Form = styled.form`
 
 
 
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (min-width: 1440px) {
   display: flex;
-  margin: 0 auto;
-  margin-top: 5%;
+  align-items: center;
+  justify-content: center;
   width: 30%;
   height: 50%;
+
 }
 
   @media only screen and (max-width: 968px) {
