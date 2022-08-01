@@ -41,7 +41,7 @@ export const Form = styled.form`
   @media only screen and (max-width: 1440px) {
   display: flex;
   margin: 0 auto;
-  margin-top: 20%;
+  margin-top: 5%;
   width: 30%;
   height: 50%;
 }
