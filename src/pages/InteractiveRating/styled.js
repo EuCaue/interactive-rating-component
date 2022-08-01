@@ -43,7 +43,7 @@ export const Form = styled.form`
   margin: 0 auto;
   margin-top: 20%;
   width: 30%;
-  height: 47%;
+  height: 50%;
 }
 
   @media only screen and (max-width: 968px) {
